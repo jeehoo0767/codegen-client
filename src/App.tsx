@@ -10,7 +10,7 @@ function App() {
     // axios.get('http://localhost:8080/board').then(res => {
     //   console.log(res)
     // })
-    console.log(data)
+    console.log(data?.boards?.map(item => item))
   }, [data])
 
   return (
