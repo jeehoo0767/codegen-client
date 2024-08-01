@@ -4,7 +4,6 @@ export default defineConfig({
   dashboardApi: {
     input: {
       target: 'http://localhost:8080/swagger.json',
-      // target: 'https://api-money.coinfeed.co.kr/swagger',
     },
     output: {
       mode: 'tags',

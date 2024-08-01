@@ -5,13 +5,6 @@ import axios from 'axios';
 import {useGetBoard} from "./rest/generated/board";
 
 function App() {
-  const {data} = useGetBoard({end_date: "2021-10-10", start_date: "2021-10-10"})
-  useEffect(() => {
-    // axios.get('http://localhost:8080/board').then(res => {
-    //   console.log(res)
-    // })
-    console.log(data?.boards?.map(item => item))
-  }, [data])
 
   return (
     <div className="App">
